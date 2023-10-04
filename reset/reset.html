@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tesseract - Reset</title>
+  <link rel="shortcut icon" href="../images/icon.png">
+  <link rel="stylesheet" href="./reset.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  
+</head>
+<body>
+
+    <video class="video-background" autoplay muted>
+      <source src="../images/sign-tesseract.mp4" type="video/mp4">
+    </video>
+  
+  <!-- Create reset form, inputs fields and error/success messages-->
+
+  <div class="container">
+    <div class="header">
+        <h2>Welcome to Tesseract reset page</h2>
+    </div>
+    <form class="form" id="form">
+
+      <div class="form-control">
+        <label for="username">Username</label>
+        <input type="text" placeholder="enter your username " id="username">
+    </div>
+
+  <div class="form-control">
+    <button class="reset_btn" id="button" type="submit">Reset</button>
+    <div class="messages">
+      <div class="success" id="success">User reset! All data erased! Please, resume the registration procedure!
+      </div>
+    </div>
+    </div>
+
+      
+    </div>
+  </form>
+</div>
+
+
+  <script src="./reset.js"></script>
+</body>
+</html>

@@ -23,7 +23,7 @@ The purpose  of the app is to provide a clear and simple solution for employees
 
 # Architecture and Technological Requirements
 
-● Integrate manage shifts 
+● Integrate manage shifts.
 ● Client only without server side data.
 
 # Infrastructures
@@ -34,10 +34,13 @@ The purpose  of the app is to provide a clear and simple solution for employees
 ○ Js
 
 # Database
+
 ○ Localstorage
 
 # Internationalisation
+
 ○ English
 
 # Security
-○ Local storage - the data will be saved to localstorage
+
+○ Local storage - the data will be saved to localstorage.
