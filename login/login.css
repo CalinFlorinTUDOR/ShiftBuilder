@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+body {
+  
+  background-color: black;
+  
+}
+
+/* Set tesseract to the right side of the body */
+
+.video-background {
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-5%, -58%);
+  min-height: 50%;
+  min-width: 50%;
+  z-index: -1;
+  zoom: 35%;
+  
+}
+
+/* Customize the sign up form */
+
+.container {
+  background-color: transparent;
+  color: #19c0d6;
+  border-radius: 7px;
+  box-shadow: 0 7px 49px #19c0d6;
+  margin-top: 100px;
+  margin-left: 100px;
+  overflow: hidden;
+  width: 800px;
+  
+}
+
+.header {
+  background-color: transparent;
+  border-bottom: 1px solid #19c0d6;
+  padding: 25px 75px;
+  word-spacing: 3px;
+}
+
+.header h2 {
+  display: flex;
+  justify-content: center;
+  
+}
+
+.form {
+
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding: 30px 40px;
+}
+
+.form-control {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.form-control label {
+
+  cursor: pointer;
+  display: inline-block;
+  margin-bottom: 10px;
+  
+}
+
+.form-control input {
+  
+  border: 2px solid #f0f0f0;
+  border-radius: 5px;
+  display: block;
+  font-family: inherit;
+  font-size: 14px;
+  padding: 10px;;
+  width: 100%;
+}
+
+/* Validations for error / success messages on input fields*/
+
+.form-control.success input {
+
+  border-color: #2ecc71;
+  
+}
+
+.form-control.error input {
+
+  border-color: #e74c3c;
+
+}
+
+.form-control i {
+  position: absolute;
+  top: 40px;
+  right: 10px;
+  visibility: hidden;
+}
+
+.form-control.success i.fa-check-circle {
+  
+  color: #2ecc71;
+  visibility: visible;
+
+}
+
+.form-control.error i.fa-times-circle {
+  
+  color: #e74c3c;
+  visibility: visible;
+  
+}
+
+
+.form-control small {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+}
+
+.form-control.error small {
+  color: #e74c3c;
+  visibility: visible;
+}
+
+.redirect {
+  
+  display: flex;
+  margin-top: 20px;
+  gap: 420px;
+  
+}
+
+a {
+
+  color: #19c0d6;
+  text-decoration: none;
+
+}
+
+.form button {
+
+  background-color: rgba(14, 28, 151, 0.6);
+  border: 2px solid rgba(14, 28, 151, 0.6);
+  border-radius: 5px;
+  color: #f0f0f0;
+  display: block;
+  font-family: inherit;
+  font-size: 16px;
+  padding: 10px;
+  width: 100%;
+  margin-top: 26px;
+
+}
+
+.messages {
+  width: 100%;
+  position: relative;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+
+}
+
+.messages .success {
+
+  font-size: 18px;
+  color: #2ecc71;
+  margin-top: 20px;
+  position: absolute;
+  animation: buttons .3s linear;
+  display: none;
+
+}
+
+.messages .danger {
+  
+  font-size: 18px;
+  color: #e74c3c;
+  margin-top: 20px;
+  position: absolute;
+  transition: .3s;
+  animation: buttons .3s linear;
+  display: none;
+
+}
+
+@keyframes buttons{
+    0% {
+      transform: scale(0.1);
+    }
+    50% {
+      transform: scale(0.5);
+    }
+    100% {
+      transform: scale(1);
+    }
+}

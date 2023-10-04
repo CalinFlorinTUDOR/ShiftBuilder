@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./dashboard.css">
+  <link rel="shortcut icon" href="../images/icon.png">
+  <title>Tesseract - BackOffice</title>
+</head>
+<body>
+  <nav class="navbar">
+    <div><a href="../intro/intro.html"><img src="../images/logo.gif" class="logo"></a></div>
+
+    <div class="navbar-links">
+      <ul id="menu" class="navigation-bar">
+        <li class="myShifts-button" id="myShifts-button">Shifts</li>
+
+    <div class="shift-edit" id="shift-edit">
+        <header>
+          <input type="search" class="search-input" id="search-input" placeholder="Search">
+            <form class="new-shift-form" id="new-shift-form">
+                <input type="text" class="new-shift-input" id="new-shift-input" placeholder="Initiate shift">
+                <button class="add-new-shift-input" id="add-new-shift-input"> + </button>
+                <button type="button" class="save" id="save">Save</button>
+            </form>
+        </header>
+
+        <main>
+            <div class="shifts" id="shifts">
+                
+            </div>
+        </main>
+    
+        <div class="total-wage" id="total-wage">
+          <label>Total amount in a working month:</label>
+          <input type="text" class="total" id="total">
+        </div>
+    </div>
+
+    <li  class="edit-profile-button" id="edit-profile-button">Profile</li>
+
+    <form class="edit-profile-form" id="edit-profile-form">
+
+        <div class="input-container">
+          <label for="username">Username</label>
+          <input type="text" name="username" placeholder="enter your username " id="username"/>
+        </div>
+
+        <div class="input-container">
+          <label for="email">Email</label>
+          <input type="email" placeholder="enter email address" id="email" />
+        </div>
+
+        <div class="input-container">
+          <label for="fname">First Name</label>
+          <input type="text" placeholder="john" id="fname" />
+        </div>
+
+        <div class="input-container">
+          <label for="lname">Last Name</label>
+          <input type="text" placeholder="doe" id="lname" />
+        </div>
+
+        <div class="input-container">
+          <label for="password">Password</label>
+          <input type="password" placeholder="enter your password" id="password"/>
+        </div>
+
+        <div class="input-container">
+          <label for="second-password">Confirm Password</label>
+          <input type="password" placeholder="confirm password" id="password2nd"/>
+        </div>
+
+        <div class="input-container">
+          <label for="age">Age</label>
+          <input type="age" placeholder="enter age" id="age" />
+        </div>
+        
+      <button class="submit" id="update-profile-button" value="submit" type="button">Update</button>
+      </div>
+    </form>
+
+    <li class="navigation-bar-greetings">
+        Hello, <input type="text" id="greetings-user">
+    </li>
+
+    <li class="logout" id="logout"><a href="../register/register.html">Log Out</a></li>   
+    </ul>
+  </div>
+</nav>
+
+  <!-- Set video-bg as background ! For a high quality view, please, download "MPEG-4 Preview" from your VSCode Extensions-->
+  <div class="full-screen-video-container">
+    <video autoplay muted loop>
+      <source src="../images/video-bg.mp4" type="video/mp4">
+    </video>
+  </div>
+  
+
+<footer>
+<!-- Set the footer to scroll down the page for activate the sticky navbar -->
+  <div class="footer-container">
+    <div class="about-us">
+      <h2>About Us</h2>
+      <p>Tesseract Application is an online virtual app developed by our company especially for our employees to help them manage, with more efficiency, their shifts work. This app is for the study purpose and for our statistics only! </p>
+    </div>
+
+    <div class="links">
+      <h2>Short Links</h2>
+      <ul>
+        <li><a href="../login/login.html">Shifts</a></li>
+        <li><a href="../register/register.html">Personal Data</a></li>
+        <li><a href="../login/login.html">Profile</a></li>
+      </ul>
+    </div>
+
+    <div class="legal">
+      <h2>Legal</h2>
+      <ul>
+        <li><a href="#">Terms and Conditions</a></li>
+        <li><a href="#">Terms of Service</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Copyright</a></li>
+      </ul>
+    </div>
+
+    <div class="contact-us">
+      <h2>Contact Us</h2>
+      <ul class="address">
+        <li>
+          <span><i class="fa fa-globe"></i></span>
+          <span>3238 Batman's Cave Avenue<br>
+                Sydney, SY 288546,<br>Australia</span>
+        </li>
+        <li>
+          <span><i class="fa fa-phone-square"></i></span>
+          <p> <a href="tel:+61 234567890">+61 234567890</a><br>   
+              <a href="tel:+61 098765432">+61 098765432</a></p>
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<script src="dashboard.js" ></script>
+</body>
+</html>
